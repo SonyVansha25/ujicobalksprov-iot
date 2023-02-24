@@ -28,4 +28,6 @@ The log folder contains files that have the function to display the MQTT Log to 
 >npm run prod
 
 ## Run Log Application
-Open browser and access your ip+port, ex: localhost:3500
+> Open browser and access your ip+port, ex: localhost:3500 //if you create EC2 instance and not use Load Balancer
+> Open your url Load Balancer //if your create Public Load Balancer
+
