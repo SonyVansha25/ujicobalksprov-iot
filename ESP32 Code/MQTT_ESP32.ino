@@ -2,11 +2,11 @@
 #include<PubSubClient.h>
 #include<WiFi.h>
 
-const char* ssid = "SEA - Hotspot NEW";
-const char* password = "";
-const char* mqtt_server = "192.168.40.11";
-const char* mqtt_user = "handi";
-const char* mqtt_password = "handi122";
+const char* ssid = "XXXXXX"; //input your SSID
+const char* password = "XXXXXX"; //input your password SSID
+const char* mqtt_server = "XXXXXX"; // input your url mqtt_server
+const char* mqtt_user = "XXXXXX"; //input your MQTT Username
+const char* mqtt_password = "XXXXXX"; //input your MQTT Password
 
 #define pin 15
 #define tipe DHT11
@@ -50,7 +50,7 @@ void loop() {
 void reconnect() {
   while (!client.connected()) {
     Serial.println("Connecting to MQTT...");
-    if (client.connect("ESP32_DHT11", mqtt_user, mqtt_password)) {
+    if (client.connect("ESP32_DHT22", mqtt_user, mqtt_password)) {
       Serial.println("Connected to MQTT");
     } else {
       Serial.println("Failed to connect to MQTT. Retrying in 5 seconds");
