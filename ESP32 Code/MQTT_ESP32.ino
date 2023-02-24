@@ -9,7 +9,7 @@ const char* mqtt_user = "XXXXXX"; //input your MQTT Username
 const char* mqtt_password = "XXXXXX"; //input your MQTT Password
 
 #define pin 15
-#define tipe DHT11
+#define tipe DHT22
 WiFiClient eclient;
 PubSubClient client(eclient);
 DHT dht(pin, tipe);
