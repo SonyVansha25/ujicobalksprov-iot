@@ -27,11 +27,11 @@ client.on('connect', function () {
 
 client.on('message', function (topic, message) {
   logData.push({ topic: topic, message: parseFloat(message.toString()) });
-  // var sql = `INSERT INTO tbl_store (topic, message) VALUES ('${topic}', '${message.toString()}')`;
-  // connection.query(sql, function (error, results, fields) {
-  //   if (error) throw error;
-  //   console.log('Data berhasil disimpan');
-  // });
+  var sql = `INSERT INTO tbl_store (topic, message) VALUES ('${topic}', '${message.toString()}')`;
+  connection.query(sql, function (error, results, fields) {
+     if (error) throw error;
+       console.log('Data berhasil disimpan');
+  });
 });
 
 app.use(express.static(__dirname + '/'));
