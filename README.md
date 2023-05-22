@@ -1,5 +1,5 @@
-# Project LKS Kab. Malang 2023
-<p>This is a project for Malang District LKS activities in 2023</p>
+# Project Uji Coba LKS Provinsi 2023
+<p>This is a project for East Java Province LKS activities in 2023</p>
 
 # Folder ESP32 Code
 ESP32 code is the program code for ESP32 microcontroller and DHT22, please change the program in the section:
