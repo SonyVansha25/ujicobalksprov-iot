@@ -32,31 +32,27 @@ The log folder contains files that have the function to display the MQTT Log to 
 > Open your url Load Balancer //if your create Public Load Balancer<br/>
 
 ## User Data Apps
-> #!/bin/bash
-> echo "step1"
-> yum install git gcc-c++ make -y
-> curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
-> yum install nodejs -y
-> echo "step2"
-> mkdir /home/ec2-user/lkskabmalang2023
-> git clone https://github.com/handipradana/lkskabmalang2023.git
-> /home/ec2-user/lkskabmalang2023
-> echo $(ls /home/ec2-user/lkskabmalang2023)
-> echo "step4"
-> touch /home/ec2-user/lkskabmalang2023/log/.env
-> printf "MQTT_BROKER=mqtt://134.229.201.131\n" >> /home/ec2-
-> user/lkskabmalang2023/log/.env
-> printf "MQTT_PORT=1883\n" >> /home/ec2-user/lkskabmalang2023/log/.env
-> printf "MQTT_USERNAME=sony\n" >> /home/ec2-
-> user/lkskabmalang2023/log/.env
-> printf "MQTT_PASSWORD=adminsony\n" >> /home/ec2-
-> user/lkskabmalang2023/log/.env
-> printf "DB_HOST=lks-mysql.cvtkq5deqmb8.us-east-1.rds.amazonaws.com\n" >> /home/ec2-user/lkskabmalang2023/log/.env
-> printf "DB_USER=admin\n" >> /home/ec2-user/lkskabmalang2023/log/.env
-> printf "DB_PASSWORD=adminsony\n" >> /home/ec2-
-> user/lkskabmalang2023/log/.env
-> printf "DB_NAME=lks_iot\n" >> /home/ec2-user/lkskabmalang2023/log/.env
-> echo "step5"
-> npm install --prefix /home/ec2-user/lkskabmalang2023/log/
-> npm run prod --prefix /home/ec2-user/lkskabmalang2023/log/
+> #!/bin/bash<br/>
+> echo "step1"<br/>
+> yum install git gcc-c++ make -y<br/>
+> curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -<br/>
+> yum install nodejs -y<br/>
+> echo "step2"<br/>
+> mkdir /home/ec2-user/lkskabmalang2023<br/>
+> git clone https://github.com/handipradana/lkskabmalang2023.git<br/>
+> /home/ec2-user/lkskabmalang2023<br/>
+> echo $(ls /home/ec2-user/lkskabmalang2023)<br/>
+> echo "step4"<br/>
+> touch /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "MQTT_BROKER=mqtt://134.229.201.131\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "MQTT_PORT=1883\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "MQTT_USERNAME=sony\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "MQTT_PASSWORD=adminsony\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "DB_HOST=lks-mysql.cvtkq5deqmb8.us-east-1.rds.amazonaws.com\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "DB_USER=admin\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "DB_PASSWORD=adminsony\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "DB_NAME=lks_iot\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> echo "step5"<br/>
+> npm install --prefix /home/ec2-user/lkskabmalang2023/log/<br/>
+> npm run prod --prefix /home/ec2-user/lkskabmalang2023/log/<br/>
 > echo "finish"
