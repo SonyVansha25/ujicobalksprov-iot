@@ -2,8 +2,8 @@
 #include<PubSubClient.h>
 #include<WiFi.h>
 
-const char* ssid = "XXXXXX"; //input your SSID
-const char* password = "XXXXXX"; //input your password SSID
+const char* ssid = "Wokwi-GUEST"; //input your SSID
+const char* password = ""; //input your password SSID
 const char* mqtt_broker = "XXXXXX"; // input your url mqtt_server
 const char* mqtt_user = "XXXXXX"; //input your MQTT Username
 const char* mqtt_password = "XXXXXX"; //input your MQTT Password
