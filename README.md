@@ -44,7 +44,7 @@ The log folder contains files that have the function to display the MQTT Log to 
 > echo $(ls /home/ec2-user/lkskabmalang2023)<br/>
 > echo "step4"<br/>
 > touch /home/ec2-user/lkskabmalang2023/log/.env<br/>
-> printf "MQTT_BROKER=mqtt://134.229.201.131\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
+> printf "MQTT_BROKER=mqtt://34.229.201.131\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
 > printf "MQTT_PORT=1883\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
 > printf "MQTT_USERNAME=sony\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
 > printf "MQTT_PASSWORD=adminsony\n" >> /home/ec2-user/lkskabmalang2023/log/.env<br/>
